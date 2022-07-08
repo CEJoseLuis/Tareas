@@ -1,11 +1,12 @@
 import { useState } from "react"
 const AddTarea = ({onAdd}) => {
-
-    const [texto, setTexto] = useState("")
-    const [fecha, setFecha] = useState("")
-    const [terminada, setTerminada] = useState(false)
+  //Mismos que en el json o info
+  const [texto, setTexto] = useState("")
+  const [fecha, setFecha] = useState("")
+  const [terminada, setTerminada] = useState(false)
 
   const onSubmit = (e) => {
+    //Todos los formularios deben de tener esto para evitar recargar la pagina
     e.preventDefault()
     if(!texto){
         alert("Profavor teclea algo")
